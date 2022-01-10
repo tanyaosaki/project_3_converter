@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>modul3 project</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="logo">
+        
+        <div class="section">
+                <p class="section-name">БАНК</p>
+                <p class="section-name">БИЗНЕС</p>
+                <p class="section-name">ИНВЕСТИЦИИ</p>
+                <p class="section-name">СТРАХОВАНИЕ</p>
+                <p class="section-name">МОБАЙЛ</p>
+                <p class="section-name">ПУТЕШЕСТВИЯ</p>
+                <p class="section-name">РАЗВЛЕЧЕНИЯ</p>
+        </div>
+   <button type="button" class="enter-button">ВОЙТИ</button>
+    </header>
+    <main>
+        <div class="calc">
+            <div class="calc__box">
+                <h1 class="title">Конвертер валют онлайн</h1>
+                <div>
+                    <div class="calc__side">
+                        <div class="calc__title">У меня есть</div>
+                        <ul class="calc__switcher js-converter-switcher">
+                            <li class="from_rub active">RUB</li>
+                            <li class="from_usd">USD</li>
+                            <li class="from_eur">EUR</li>
+                            <li class="from_gbp">GBP</li>
+                        </ul>
+        
+                        <div class="calc__input_box">
+                            <input class="calc__input_box__from" data-reverse="false" type="text"
+                                value="1" maxlength="8" style="font-size: 36px;">
+                            <div class="calc__from__rate">1 RUR = 0.0137 USD</div>
+                        </div>
+                    </div>
+        
+        
+                    <div class="calc__side">
+                        <div class="calc__title">Хочу приобрести</div>
+        
+                        <ul class="calc__switcher js-converter-switcher">
+                            <li class="to_rub">RUB</li>
+                            <li class="to_usd active">USD</li>
+                            <li class="to_eur">EUR</li>
+                            <li class="to_gbp">GBP</li>
+                        </ul>
+        
+                        <div class="calc__input_box">
+                            <input class="calc__input_box__to" data-reverse="true" type="text"
+                                maxlength="8" style="font-size: 36px;">
+                            <div class="calc__to__rate">1 USD = 73.1886 RUR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src='script.js'></script>
+</body>
+</html>
